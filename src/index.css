@@ -1,0 +1,234 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  color: #fff;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-family: "Playball", cursive;
+  margin: 3rem;
+}
+
+ul li a:hover,
+button a:hover,
+.brand-logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Home component */
+.home {
+  margin: 0;
+  padding: 0;
+  background: url(/images/women-dresses-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home-content {
+  padding-top: 10rem;
+}
+
+.home-content button {
+  margin-top: 5rem;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #f44336;
+  transition: all 0.4s linear;
+}
+
+.home-content button:hover {
+  background-color: teal !important;
+}
+
+.home-title {
+  font-family: "Playball", cursive;
+  font-size: 4rem;
+}
+
+/* ArticleList component */
+.article-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Article component */
+.card {
+  width: 300px;
+  margin: 1rem;
+  border: 2px solid #f44336;
+  transition: all 0.4s linear;
+}
+
+.card:hover {
+  border: 2px solid #009688;
+}
+
+.card-content span {
+  font-size: 18px;
+}
+
+.card-image {
+  height: 250px;
+  overflow: hidden;
+  padding-top: 40px;
+  transition: all 1s linear;
+}
+
+.card-img {
+  transition: all 1s linear;
+}
+
+.card-image:hover .card-img {
+  transform: scale(1.2);
+}
+
+.card-action a {
+  font-weight: bold;
+}
+
+.card-action a:hover {
+  text-decoration: none;
+}
+
+.btn-floating.halfway-fab {
+  right: 10px;
+  top: 10px;
+}
+
+.btn-floating:focus {
+  outline: none;
+}
+
+/* ArticleDetails component */
+.article-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.article-img img {
+  width: 480px;
+  height: 300px;
+  object-fit: contain;
+  transition: all 1s linear;
+}
+
+.article-img:hover img {
+  transform: scale(1.5);
+}
+
+.article-content {
+  padding-top: 6rem;
+}
+
+/* CartItem component */
+.collection li {
+  padding-left: 0;
+}
+
+.collection .collection-item {
+  display: flex;
+  padding: 10px;
+}
+
+.collection-item .item-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.item-title {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item-info {
+  align-self: center;
+  padding: 0 10px;
+}
+
+.collapsible-header {
+  margin-bottom: 1rem;
+}
+
+.checkout {
+  margin: 1rem 0 3rem 0;
+}
+
+/* PageNotFound component */
+.error-content {
+  padding-top: 3rem;
+}
+
+.error-img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  nav .brand-logo {
+    left: 15%;
+    font-size: 1rem;
+  }
+
+  .home {
+    background-position: center;
+  }
+
+  .home-content {
+    padding-top: 6rem;
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-content button {
+    font-size: 14px;
+    margin-top: 4rem;
+    width: 150px;
+    height: auto;
+  }
+
+  .page-title {
+    margin: 1rem;
+    font-size: 2.3rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  .article-images {
+    margin-top: 1rem;
+  }
+
+  .article-img {
+    margin: 30px 10px;
+  }
+
+  .article-img img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .article-img:hover img {
+    transform: scale(1.2);
+  }
+
+  .article-content {
+    padding-top: 1rem;
+  }
+}
